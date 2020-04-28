@@ -1,0 +1,149 @@
+Q1.
+var VS let VS const
+
+var: 
+  		function scoped
+  		undefined when accessing a variable before it's declared
+
+let: 
+  		block scoped
+  		ReferenceError when accessing a variable before it's declared
+
+const:
+  		block scoped
+  		ReferenceError when accessing a variable before it's declared
+  	can't be reassigned
+a.	(source: https://tylermcginnis.com/)
+
+
+
+
+
+b.	The let is same the var but it has some difference such a 
+-	The let is block scoped – block is chunk of code bounded by {} and block lives in curly braces {} – So the opearting range of let only live in curly braces if the let go out curly braces, the variable of let will shut down. For example:
+-	  let greeting = "say Hi";
+-	   let times = 4;
+-	
+-	   if (times > 3) {
+-	        let hello = "say Hello instead";
+-	        console.log(hello);//"say Hello instead"
+-	    }
+-	   console.log(hello) // hello is not defined
+(source: dev.to)
+var: 
+  		function scoped
+  		undefined when accessing a variable before it's declared
+
+let: 
+  		block scoped
+  		ReferenceError when accessing a variable before it's declared
+(source: https://tylermcginnis.com/)
+c.	-     The const is almost exactly the same as let. However the only difference is that once you’ve assigned a value to a variable using const, you can’t reassign it  toa new value.
+
+let name = 'Tyler'
+const handle = 'tylermcginnis'
+
+name = 'Tyler McGinnis' // ✅
+handle = '@tylermcginnis' // ❌ TypeError: Assignment to constant variable.
+(source: https://tylermcginnis.com/)
+
+-	Their ability help us more problem such as we can declare variable to be immutable through CONST:
+		const person = {
+  			name: 'Kim Kardashian'
+}
+
+person.name = 'Kim Kardashian West' // ✅
+
+person = {} // ❌ Assignment to constant variable. 
+
+d.	You should always use const unless know the variable is going to change . But if it will need to change (like in a for loop), you should use let.
+
+
+Q2.
+	The boolean type has only two values: true and false.
+This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”. For example:
+	let nameFieldChecked = true; // yes, name field is checked
+	let ageFieldChecked = false; // no, age field is not checked
+
+There are three logical operators in JavaScript: || (OR), && (AND), ! (NOT).
+
+a)	|| (OR)
+		The “OR” operator is represented with two vertical line symbols:
+			result = a || b;
+In classical programming, the logical OR is meant to manipulate boolean values only. If any of its arguments are true, it returns true, otherwise it returns false.:
+		alert( true || true );   // true
+		alert( false || true );  // true
+		alert( true || false );  // true
+		alert( false || false ); // false
+b)  && (AND):
+		-The AND operator is represented with two ampersands &&:
+	    result = a && b;
+
+-In classical programming, AND returns true if both operands are truthy and false otherwise:
+		alert( true && true );   // true
+		alert( false && true );  // false
+		alert( true && false );  // false
+		alert( false && false ); // false
+
+-	And “&&” finds the first falsy:
+		result = value1 && value2 && value3;
+
+-	Then AND && operator does the following:
+		 Evaluates operands from left to right.
+o	For each operand, converts it to a boolean. If the result is false, stops and returns the original value of that operand.
+o	If all operands have been evaluated (i.e. all were truthy), returns the last operand.
+The rules above are similar to OR. The difference is that AND returns the first falsy value while OR returns the first truthy one.
+	// if the first operand is truthy,
+	// AND returns the second operand:
+	alert( 1 && 0 ); // 0
+	alert( 1 && 5 ); // 5
+
+	// if the first operand is falsy,
+	// AND returns it. The second operand is ignored
+	alert( null && 5 ); // null
+	alert( 0 && "no matter what" ); // 0
+
+-	We can also pass several values in a row. See how the first falsy one is returned:
+	alert( 1 && 2 && null && 3 ); // null
+
+!!!   Precedence of AND && is higher than OR ||
+-	So the code a && b || c && d is essentially the same as if the && expressions were in parentheses: (a && b) || (c && d).
+!(NOT)
+-	The boolean NOT operator is represented with an exclamation sign !.
+    The syntax is pretty simple:
+	result = !value;
+
+-	The operator accepts a single argument and does the following:
+Converts the operand to boolean type: true/false.
+Returns the inverse value.
+For instance:
+	alert( !true ); // false
+	alert( !0 ); // true
+-	A double NOT !! is sometimes used for converting a value to boolean type:
+	alert( !!"non-empty string" ); // true
+	alert( !!null ); // false
+
+-	The fuction of Boolean: 
+	alert( Boolean("non-empty string") ); // true
+	alert( Boolean(null) ); // false
+
+One way that type coercion is used is with the use of the or ( || ) and and ( && ) operators:
+var a = 'word';
+var b = false;
+var c = true;
+var d = 0
+var e = 1
+var f = 2
+var g = null
+
+console.log(a || b); // 'word'
+console.log(c || a); // true
+console.log(b || a); // 'word'
+console.log(e || f); // 1
+console.log(f || e); // 2
+console.log(d || g); // null
+console.log(g || d); // 0
+console.log(a && c); // true
+console.log(c && a); // 'word'
+
+To source https://www.freecodecamp.org/ and https://javascript.info/
