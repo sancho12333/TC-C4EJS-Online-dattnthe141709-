@@ -1,21 +1,13 @@
+// Q3.1
 // let i = 0;
 // while(i < 7){
 //     console.log(i);
 //     i++;
     
 // }
-// Q3.1
-
-// let i = 0;
-// let n = Number(prompt("Enter a number?"));
-// while(i < n){
-//     console.log(i);
-//     i++;
-    
-// }
 // Q3.2
 
-// let i = 3;
+// let i = 0;
 // let n = Number(prompt("Enter a number?"));
 // while(i < n){
 //     console.log(i);
@@ -24,13 +16,22 @@
 // }
 // Q3.3
 
+// let i = 3;
+// let n = Number(prompt("Enter a number?"));
+// while(i < n){
+//     console.log(i);
+//     i++;
+    
+// }
+// Q3.4
+
 // let n = Number(prompt("Enter n"));
 // let i = Number(prompt("Enter c"));
 // while(i < n){
 //     console.log(i);
 //     i++;
 // }
-// Q3.4
+// Q3.5
 
 // let n = Number(prompt("Enter n"));
 // let x = Number(prompt("Enter c"));
@@ -38,7 +39,7 @@
 //     console.log(x);
 //     x+=3;
 // }
-// Q3.5
+// Q3.6
 
 // let n = Number(prompt("Enter n"));
 // let x = Number(prompt("Enter c"));
@@ -47,7 +48,7 @@
 //     console.log(x);
 //     x+=z;
 // }
-//Q3.6
+//Q4
 
 // let x = Number(prompt("How old are u??"));
 // if(x <= 14){
@@ -55,7 +56,7 @@
 // }else{
 //     console.log("Enjoy!!");
 // }
-// Q4
+// Q5
 
 // let x = Number(prompt("Enter number: "));
 // if(x <= 4.5){
@@ -63,7 +64,7 @@
 // }else{
 //     console.log("High half of 9");
 // }
-// Q5
+// Q6
 
 // let n = Number(prompt("Enter n"));
 // let x = Number(prompt("Enter x"));
@@ -72,7 +73,7 @@
 // }else{
 //     alert(`${x} is in lower half of ${n}`);
 // }
-// Q6
+// Q7
 
 // let n = Number(prompt("Enter n"));
 // if(n%2==0){
@@ -80,7 +81,7 @@
 // }else{
 //     alert(`${n} is an odd number`);
 // }
-// Q7
+// Q8
 
 // let i = 0;
 // while(i<2){
